@@ -7,9 +7,7 @@ public class Circle extends Shape implements Drawable{
     final double PI = Math.PI;
 
     public Circle(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the radius");
-        radius = sc.nextInt();
+        radius = 5;
     }
 
     public Circle(int radius){
@@ -18,10 +16,6 @@ public class Circle extends Shape implements Drawable{
 
     public void draw(){
         System.out.println("Круг");
-        /*Graphics ga = (Graphics2D)g;
-        ga.setColor(Color.red);
-        ga.drawOval(100,100,200,200);
-        return;*/
     };
 
     @Override
@@ -34,4 +28,40 @@ public class Circle extends Shape implements Drawable{
         return "Square: " + radius;
     }
 
+}
+
+class Circle2 extends Circle{
+    int radius;
+    final double PI = Math.PI;
+
+    public Circle2(){
+        radius = 6;
+    }
+
+    public  Circle2(int radius){
+        this.radius = radius;
+    }
+
+    @Override
+    public int calcArea() {
+        return (int) Math.round(PI * Math.pow(radius, 2));
+    }
+}
+
+class Circle3 extends Circle{
+    int radius;
+    final double PI = Math.PI;
+
+    public Circle3(){
+        radius = 7;
+    }
+
+    public  Circle3(int radius){
+        this.radius = radius;
+    }
+
+    @Override
+    public int calcArea() {
+        return (int) Math.round(PI * Math.pow(radius, 2));
+    }
 }
