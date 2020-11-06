@@ -2,17 +2,6 @@ package com.company;
 
 public class Model {
 
-    interface Drawable{
-        void draw();
-    }
-
-    public abstract class Shape implements Drawable {
-        String shapeColor;
-
-        public abstract int calcArea();
-        public abstract String toString();
-    }
-
     static class Rectangle extends com.company.Shape {
         public final double width, height;
 
@@ -276,6 +265,4 @@ public class Model {
             System.out.println("The third circle");
         }
     }
-
-
 }

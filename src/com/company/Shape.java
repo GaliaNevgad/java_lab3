@@ -1,7 +1,5 @@
 package com.company;
 
-import java.awt.*;
-
 interface Drawable{
     void draw();
 }

@@ -338,11 +338,4 @@ public class View {
             return null;
         }
     }
-
-    public void Graphics () {
-        RectangleGraphics rectangleGraphics1, rectangleGraphics2, rectangleGraphics3;
-        CircleGraphics circleGraphics1, circleGraphics2, circleGraphics3;
-        TriangleGraphics triangleGraphics1, triangleGraphics2, triangleGraphics3;
-    }
-
 }
